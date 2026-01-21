@@ -175,10 +175,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.06902816
+    x: -0.375
     y: 0
-    width: 0.86224645
-    height: 1
+    width: 0.75
+    height: 0
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_AssetsPPU: 16
   m_RefResolutionX: 480
   m_RefResolutionY: 270
-  m_CropFrame: 4
+  m_CropFrame: 1
   m_GridSnapping: 2
   m_FilterMode: 0
   m_UpscaleRT: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   Composition:
     ScreenPosition: {x: 0, y: 0}
     DeadZone:
-      Enabled: 1
+      Enabled: 0
       Size: {x: 0.2, y: 0.2}
     HardLimits:
       Enabled: 0
@@ -432,7 +432,6 @@ GameObject:
   - component: {fileID: 7316618528007091369}
   - component: {fileID: 8500464484571654902}
   - component: {fileID: 8500464484571654903}
-  - component: {fileID: 8500464484571654904}
   m_Layer: 0
   m_Name: Hat
   m_TagString: Untagged
@@ -636,7 +635,6 @@ GameObject:
   - component: {fileID: 6635602618833017047}
   - component: {fileID: 2022713142145115339}
   - component: {fileID: 6635602618833017048}
-  - component: {fileID: 6635602618833017049}
   m_Layer: 0
   m_Name: Hair
   m_TagString: Untagged
@@ -740,7 +738,6 @@ GameObject:
   - component: {fileID: 5460933192050358214}
   - component: {fileID: 7384539696415867900}
   - component: {fileID: 7384539696415867901}
-  - component: {fileID: 7384539696415867902}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -917,7 +914,6 @@ GameObject:
   - component: {fileID: 1140209661596278983}
   - component: {fileID: 5136117164555373131}
   - component: {fileID: 5686853416419804932}
-  - component: {fileID: 5686853416419804933}
   m_Layer: 0
   m_Name: ToolEffect
   m_TagString: Untagged
@@ -947,18 +943,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5686853416419804933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5686853416419804931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59a32dd3ef0dc0409bb5c7f603e327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovementAnimationParameterControll
 --- !u!1 &6383051053479197500
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +954,6 @@ GameObject:
   - component: {fileID: 3892678764840703804}
   - component: {fileID: 1520928779573844488}
   - component: {fileID: 6383051053479197501}
-  - component: {fileID: 6383051053479197502}
   m_Layer: 0
   m_Name: Arms
   m_TagString: Untagged
@@ -1000,18 +983,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6383051053479197502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6383051053479197500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59a32dd3ef0dc0409bb5c7f603e327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovementAnimationParameterControll
 --- !u!1 &6424067514184622094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,18 +1039,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6635602618833017049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2857626401398427008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59a32dd3ef0dc0409bb5c7f603e327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovementAnimationParameterControll
 --- !u!4 &7316618528007091369
 Transform:
   m_ObjectHideFlags: 0
@@ -1175,18 +1134,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7384539696415867902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4020602295388859419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59a32dd3ef0dc0409bb5c7f603e327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovementAnimationParameterControll
 --- !u!1 &7619247439854420191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1145,6 @@ GameObject:
   - component: {fileID: 2214050105024228433}
   - component: {fileID: 3934213324557480126}
   - component: {fileID: 7619247439854420192}
-  - component: {fileID: 7619247439854420193}
   m_Layer: 0
   m_Name: Tool
   m_TagString: Untagged
@@ -1228,18 +1174,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7619247439854420193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7619247439854420191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59a32dd3ef0dc0409bb5c7f603e327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovementAnimationParameterControll
 --- !u!4 &7686540609480185748
 Transform:
   m_ObjectHideFlags: 0
@@ -1347,18 +1281,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8500464484571654904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40132747090356933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d59a32dd3ef0dc0409bb5c7f603e327a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovementAnimationParameterControll
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
