@@ -29,7 +29,7 @@ public class PlayerAnimationTest : MonoBehaviour
     public bool ildeDown;
     public bool idleLeft;
     public bool idleRight;
-
+    
     private void Update()
     {
         EventHandler.CallMovementEvent(inputX, inputY, isWalking, isRunning, isIdle, isCarrying,

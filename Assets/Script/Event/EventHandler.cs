@@ -8,8 +8,13 @@ public delegate void MovementDelegate(float inputX, float inputY, bool isWalking
     );
 
 public static class EventHandler
+
 {
+    //Movement Event
+
     public static event MovementDelegate MovementEvent;
+
+    //Movement Event call for Publisers
 
     public static void CallMovementEvent(float inputX, float inputY, bool isWalking, bool isRunning, bool isIdle, bool isCarrying,
     ToolEffect toolEffect,
@@ -30,4 +35,4 @@ public static class EventHandler
                 idleUp, ildeDown, idleLeft, idleRight);
         }
     }
-}
+} 
