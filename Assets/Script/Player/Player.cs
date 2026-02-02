@@ -17,7 +17,7 @@ public class Player : SingletonMonobehavior<Player>
     private bool isUsingToolLeft;
     private bool isUsingToolRight;
     private bool isUsingToolUp;
-    private bool isSWingingToolDown;
+    private bool isSwingingToolDown;
     private bool isSwingingToolLeft;
     private bool isSwingingToolRight;
     private bool isSwingingToolUp;
@@ -54,9 +54,26 @@ public class Player : SingletonMonobehavior<Player>
 
         PlayerWalkInput();
 
+        EventHandler.CallMovementEvent(xInput, yInput, isWalking, isRunning, isIdle, isCarrying, toolEffect,   
+            isUsingToolRight, isUsingToolLeft, isUsingToolUp, isUsingToolDown,
+            isLiftingToolRight, isLiftingToolLeft, isLiftingToolUp, isLiftingToolDown,
+            isPickingRight, isPickingLeft, isPickingUp, isPickingDown,
+            isSwingingToolRight, isSwingingToolLeft, isSwingingToolUp, isSwingingToolDown,
+            false, false, false, false); 
         #endregion
     }
-
+    
+    private void FixedUpdate()
+    {
+        PlayerMovement();
+    }
+  
+    private void PlayerMovement()
+    {
+        Vector2 move = new Vector2(xInput * movementSpeed * Time.deltaTime, yInput * movementSpeed * Time.deltaTime);
+        rigidBody2D.MovePosition(rigidBody2D.position + move);
+    }
+    
     private void ResetAnimationTriggers()
     {
         isPickingRight = false;
@@ -74,7 +91,7 @@ public class Player : SingletonMonobehavior<Player>
         isSwingingToolRight = false;
         isSwingingToolLeft = false;
         isSwingingToolUp = false;
-        isSWingingToolDown = false;
+        isSwingingToolDown = false;
         toolEffect = ToolEffect.none;
     }
 
